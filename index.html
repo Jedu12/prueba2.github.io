@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNAKE</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wapper">
+        <div class="game-details">
+            <div class="score">Score: 10</div>
+            <div class="high-score">High Score: 100</div>
+        </div>
+        <div class="play-board"></div>
+    </div>
+    <div class="score-board">
+        <h2>Rankings</h2>
+        <ul id="ranking-list"></ul>
+    </div>
+    <form id="nickname-form">
+        <label for="nickname">Enter Nickname:</label>
+        <input type="text" id="nickname" required>
+        <button type="submit">Submit</button>
+    </form>
+    <audio id="background-music" src="Dragon Ball GT Opening - 8-Bit Version.mp3" loop></audio>
+    <audio id="eat-sound" src="sound/sound.mp3"></audio>
+    <script src="script/main4.js"></script>
+</body>
+
+</html>
+

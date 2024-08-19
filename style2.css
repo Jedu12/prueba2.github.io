@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(71, 118, 129);
+    font-family: "Press Start 2P", system-ui;
+}
+
+.wapper { /* Aquí va el fondo del juego */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 75vh;
+    height: 75vh;
+    background-color: rgb(21, 22, 26);
+    border-radius: 10px;
+}
+
+.game-details {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 100;
+    font-style: normal;
+    color: rgb(21, 136, 36);
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+.play-board { /* Aquí va el juego */
+    display: grid;
+    background-color: rgb(29, 63, 47);
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+    height: 80%; /* Ajusta la altura */
+    width: 80%;  /* Ajusta el ancho */
+    margin-bottom: 20px; /* Espacio entre el juego y el área de puntuación */
+}
+
+
+.play-board .food {
+    background-color: rgba(166, 255, 0, 0.678);
+}
+
+.play-board .body {
+    background-color: rgba(0, 225, 255, 0.678);
+}
+
+.play-board .head {
+    background-color: rgba(0, 225, 255, 0.678);
+}
+
+.score-board {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(47, 85, 52, 0.342);
+    border-radius: 25px;
+    margin-top: 20px;
+    width: 300px;
+}
+#ranking-list {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos estén en una columna */
+    width: 100%; /* Hace que la lista ocupe todo el ancho disponible */
+    text-align: center; /* Centra el texto dentro de cada elemento de la lista */
+}
+
+#ranking-list li {
+    color: rgb(231, 231, 231);
+    margin: 5px 0;
+}
+
+#nickname-form {
+    display: flex;
+    flex-direction: column; /* Alinea el formulario en columna */
+    flex-direction: ;
+    margin-top: 20px;
+}
+
+#nickname-form label {
+    color: rgb(231, 231, 231);
+    margin-bottom: 10px;
+}
+
+#nickname-form input {
+    padding: 5px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 200px; /* Asegura que el campo de entrada ocupe todo el ancho disponible */
+}
+
+#nickname-form button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(21, 136, 36);
+    color: rgb(231, 231, 231);
+    cursor: pointer;
+    width: 100px; /* Asegura que el botón ocupe todo el ancho disponible */
+}
+
+#nickname-form button:hover {
+    background-color: rgb(21, 170, 36);
+}
+
+h2{
+    color: aliceblue;
+}
+
+
+#nickname-form label {
+    font-family: "Press Start 2P", system-ui; /* Fuente personalizada */
+    font-size: 18px; /* Tamaño de fuente */
+    color: rgb(21, 136, 36); /* Color del texto */
+    display: block; /* Ocupa toda la línea */
+    margin-bottom: 10px; /* Espacio debajo de la etiqueta */
+    text-align: center; /* Alineación centrada del texto */
+    font-weight: bold; /* Fuente en negrita */
+    border: 2px solid rgb(21, 136, 36); /* Borde alrededor de la etiqueta */
+    padding: 5px; /* Espacio interno dentro del borde */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: rgba(0, 0, 0, 0.2); /* Fondo con transparencia */
+}
